@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+    <defs>
+        <linearGradient id="twghtkp2pa" x2="1" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#102cba"/>
+            <stop offset="1" stop-color="#3375f7"/>
+        </linearGradient>
+    </defs>
+    <g data-name="그룹 7137">
+        <path data-name="사각형 891" style="fill:url(#twghtkp2pa)" d="M0 0h50v50H0z"/>
+        <path data-name="패스 1296" d="m0 0 7.365 7.372L0 14.739" transform="rotate(-90 19.281 1.655)" style="stroke-linejoin:round;fill:none;stroke:#fff;stroke-linecap:round;stroke-width:2px"/>
+        <path data-name="패스 1297" d="M22.615 0H0" transform="rotate(-90 30.654 5.657)" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-width:2px"/>
+    </g>
+</svg>

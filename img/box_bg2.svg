@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="482" height="518" viewBox="0 0 482 518">
+    <defs>
+        <linearGradient id="9uw1s8siwa" x1=".034" x2=".831" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#0f2ab9"/>
+            <stop offset="1" stop-color="#3375f7"/>
+        </linearGradient>
+        <linearGradient id="vmoigpbhqd" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#169b3e"/>
+            <stop offset="0" stop-color="#a9e260" stop-opacity=".78"/>
+            <stop offset="1" stop-color="#aae361" stop-opacity="0"/>
+        </linearGradient>
+        <linearGradient id="5qqqdi5iwe" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#169b3e"/>
+            <stop offset="0" stop-color="#008750" stop-opacity=".78"/>
+            <stop offset="1" stop-color="#aae361" stop-opacity="0"/>
+        </linearGradient>
+        <clipPath id="33gwottt7c">
+            <rect data-name="사각형 6221" width="464" height="500" rx="14" transform="translate(644 4103)" style="fill:url(#9uw1s8siwa)"/>
+        </clipPath>
+        <filter id="re3hnuh3ib" x="0" y="0" width="482" height="518" filterUnits="userSpaceOnUse">
+            <feOffset dy="6"/>
+            <feGaussianBlur stdDeviation="3" result="blur"/>
+            <feFlood flood-opacity=".302"/>
+            <feComposite operator="in" in2="blur"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g data-name="그룹 8289" style="opacity:.7">
+        <g style="filter:url(#re3hnuh3ib)">
+            <rect data-name="사각형 6237" width="464" height="500" rx="14" transform="translate(9 3)" style="fill:url(#9uw1s8siwa)"/>
+        </g>
+        <g data-name="마스크 그룹 7153" transform="translate(-635 -4100)" style="opacity:.5;mix-blend-mode:hard-light;isolation:isolate;clip-path:url(#33gwottt7c)">
+            <g data-name="그룹 7942" transform="rotate(-90 2569.557 1979.066)">
+                <circle data-name="타원 750" cx="176.996" cy="176.996" r="176.996" transform="rotate(-180 275.307 180.634)" style="fill:url(#vmoigpbhqd)"/>
+                <circle data-name="타원 751" cx="176.996" cy="176.996" r="176.996" transform="translate(8.498 7.277)" style="fill:url(#5qqqdi5iwe)"/>
+            </g>
+        </g>
+    </g>
+</svg>

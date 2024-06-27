@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="672" height="618" viewBox="0 0 672 618">
+    <defs>
+        <linearGradient id="dyxit4nsza" x1=".034" x2=".831" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#0f2ab9"/>
+            <stop offset="1" stop-color="#3375f7"/>
+        </linearGradient>
+        <linearGradient id="uxmxpre6oc" x1=".331" y1=".125" x2=".831" xlink:href="#dyxit4nsza"/>
+        <linearGradient id="cmjml6ztje" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#417cb8"/>
+            <stop offset="0" stop-color="#5499b8" stop-opacity=".78"/>
+            <stop offset="1" stop-color="#6ea12d" stop-opacity="0"/>
+        </linearGradient>
+        <clipPath id="cclbxstkud">
+            <rect data-name="사각형 6264" width="654" height="601" rx="14" transform="translate(644 4103)" style="fill:url(#dyxit4nsza)"/>
+        </clipPath>
+        <filter id="vfh0i88mrb" x="0" y="0" width="672" height="618" filterUnits="userSpaceOnUse">
+            <feOffset dy="6"/>
+            <feGaussianBlur stdDeviation="3" result="blur"/>
+            <feFlood flood-opacity=".302"/>
+            <feComposite operator="in" in2="blur"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g data-name="mbc_box">
+        <g style="filter:url(#vfh0i88mrb)">
+            <rect data-name="mbc_box" width="654" height="600" rx="14" transform="translate(9 3)" style="opacity:.7;fill:url(#uxmxpre6oc)"/>
+        </g>
+        <g data-name="마스크 그룹 7155" transform="translate(-635 -4100)" style="mix-blend-mode:hard-light;isolation:isolate;clip-path:url(#cclbxstkud)">
+            <g data-name="그룹 7952" transform="rotate(-90 2685.057 2006.566)">
+                <circle data-name="타원 755" cx="206.923" cy="206.923" r="206.923" transform="rotate(-180 262.636 178.561)" style="fill:url(#cmjml6ztje)"/>
+                <circle data-name="타원 756" cx="206.923" cy="206.923" r="206.923" transform="translate(-108.502 -56.723)" style="fill:url(#cmjml6ztje)"/>
+            </g>
+        </g>
+    </g>
+</svg>

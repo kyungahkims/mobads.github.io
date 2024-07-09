@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1" />
+	<title>cube banner</title>
+	<link rel="stylesheet" type="text/css" href="https://img.mobwithad.com/ad/imgfile/frame/css/mobwith_reset.css" />
+	<script type="text/javascript" src="https://img.mobwithad.com/ad/imgfile/frame/js/jquery.js"></script>
+
+	<style type="text/css">
+		html,
+		body {
+			background-color: transparent;
+		}
+
+		#mobon_banner {
+			position: relative;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+			width: 100%;
+			height: 600px;
+			text-align: center;
+			transition: all 3s ease 0s;
+			transform: scale(0.5);
+			position: absolute;
+			top: -70px;
+		}
+
+		#mobonLogo {
+			top: 64px;
+		}
+
+		.item2 {
+			position: relative;
+			width: 300px;
+			height: 300px;
+			overflow: hidden;
+			cursor: pointer;
+		}
+
+		.scene {
+			width: 300px;
+			height: 600px;
+			perspective: 4000px;
+			/*    transform: scale3d(0.7, 0.7, 0.7); */
+			transform: scale3d(1, 1, 1);
+		}
+
+		.cube {
+			position: relative;
+			width: 100%;
+			height: 100%;
+			transform-style: preserve-3d;
+			transform: translateZ(-100px);
+			transition: all 1s ease 0s;
+			-webkit-animation: rotation 10s linear infinite;
+			animation: rotation 10s linear infinite;
+		}
+
+		.cube_face {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			color: #fff;
+			/* font-size: 2.5em; */
+			font-family: monospace;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+			background: #fff;
+			overflow: hidden;
+			border: 1px solid #dbdbdb;
+			box-sizing: border-box;
+		}
+
+		.blur_effect {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			filter: blur(10px);
+			-webkit-filter: blur(10px);
+			cursor: pointer;
+		}
+
+		.cube_face_front {
+			transform: rotateY(3deg) translateZ(150px);
+		}
+
+		.cube_face_back {
+			transform: rotateY(183deg) translateZ(150px);
+		}
+
+		.cube_face_back .item2 {
+			height: 298px;
+		}
+
+		.cube_face_back.on {
+			transform: rotate(180deg) rotateY(180deg) translateZ(150px);
+		}
+
+		.cube_face_right {
+			transform: rotateY(93deg) translateZ(150px);
+		}
+
+		.cube_face_left {
+			transform: rotateY(-87deg) translateZ(150px);
+		}
+
+		@-webkit-keyframes rotation {
+			0% {
+				-moz-transform: rotateX(0deg) rotateY(0deg);
+				-webkit-transform: rotateX(0deg) rotateY(0deg);
+				transform: rotateX(0deg) rotateY(0deg);
+			}
+
+			25% {
+				-moz-transform: rotateX(0deg) rotateY(-90deg);
+				-webkit-transform: rotateX(0deg) rotateY(-90deg);
+				transform: rotateX(0deg) rotateY(-90deg);
+			}
+
+			50% {
+				-moz-transform: rotateX(0deg) rotateY(-180deg);
+				-webkit-transform: rotateX(0deg) rotateY(-180deg);
+				transform: rotateX(0deg) rotateY(-180deg);
+			}
+
+			75% {
+				-moz-transform: rotateX(0deg) rotateY(-270deg);
+				-webkit-transform: rotateX(0deg) rotateY(-270deg);
+				transform: rotateX(0deg) rotateY(-270deg);
+			}
+
+			100% {
+				-moz-transform: rotateX(0deg) rotateY(-360deg);
+				-webkit-transform: rotateX(0deg) rotateY(-360deg);
+				transform: rotateX(0deg) rotateY(-360deg);
+			}
+		}
+
+		@keyframes rotation {
+			0% {
+				-moz-transform: rotateX(0deg) rotateY(0deg);
+				-webkit-transform: rotateX(0deg) rotateY(0deg);
+				transform: rotateX(0deg) rotateY(0deg);
+			}
+
+			25% {
+				-moz-transform: rotateX(0deg) rotateY(-90deg);
+				-webkit-transform: rotateX(0deg) rotateY(-90deg);
+				transform: rotateX(0deg) rotateY(-90deg);
+			}
+
+			50% {
+				-moz-transform: rotateX(0deg) rotateY(-180deg);
+				-webkit-transform: rotateX(0deg) rotateY(-180deg);
+				transform: rotateX(0deg) rotateY(-180deg);
+			}
+
+			75% {
+				-moz-transform: rotateX(0deg) rotateY(-270deg);
+				-webkit-transform: rotateX(0deg) rotateY(-270deg);
+				transform: rotateX(0deg) rotateY(-270deg);
+			}
+
+			100% {
+				-moz-transform: rotateX(0deg) rotateY(-360deg);
+				-webkit-transform: rotateX(0deg) rotateY(-360deg);
+				transform: rotateX(0deg) rotateY(-360deg);
+			}
+		}
+
+		@-webkit-keyframes twinkling {
+			0% {
+				opacity: 1;
+			}
+
+			50% {
+				opacity: 0.3;
+			}
+
+			100% {
+				opacity: 1;
+			}
+		}
+
+		@keyframes twinkling {
+			0% {
+				opacity: 1;
+			}
+
+			50% {
+				opacity: 0.3;
+			}
+
+			100% {
+				opacity: 1;
+			}
+		}
+
+		.shop_box {
+			display: flex;
+			width: 100%;
+			box-sizing: border-box;
+		}
+
+		.shop_box .mobon_box {
+			height: 300px;
+		}
+
+		.shop_box .mobon_box .item2 {
+			height: 300px;
+		}
+
+		.shop_box.type2 {
+			gap: 5px 2%;
+			flex-wrap: wrap;
+			padding: 0 2% 2% 2%;
+		}
+
+		.shop_box.type2 .mobon_box {
+			width: 32%;
+			height: 190px;
+		}
+
+		.shop_box.type2 .mobon_box .item2 {
+			width: 100%;
+			height: 150px;
+		}
+
+		.shop_box.type3 {
+			gap: 3px 3px;
+			flex-wrap: wrap;
+			margin: 3px 0 0 0;
+		}
+
+		.shop_box.type3 .mobon_box {
+			width: 49.5%;
+			height: 146px;
+		}
+
+		.shop_box.type3 .mobon_box .item2 {
+			width: 100%;
+			height: 146px;
+		}
+
+		.goodsInfo {
+			padding: 5px 5px 5px 5px;
+		}
+
+		.goodsInfo p {
+			color: #000;
+			font-size: 14px;
+			text-align: center;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			display: -webkit-box;
+			line-clamp: 2;
+			-webkit-line-clamp: 2;
+			-webkit-box-orient: vertical;
+			height: 32px;
+		}
+
+		* {
+			background-position: center;
+			background-size: cover;
+		}
+
+		.blur_effect.obj0_img {
+			background-image: url("./img/banner/1.png");
+		}
+
+		.cube_face_front.obj0_img .mobon_box .obj0_img {
+			background-image: url("./img/banner/1.png");
+		}
+
+		.cube_face_right .mobon_box .item2.obj1_img {
+			background-image: url("./img/banner/2.png");
+		}
+
+		.cube_face_right .mobon_box .item2.obj2_img {
+			background-image: url("./img/banner/3.png");
+		}
+
+		.cube_face_right .mobon_box .item2.obj3_img {
+			background-image: url("./img/banner/4.png");
+		}
+
+		.cube_face_right .mobon_box .item2.obj4_img {
+			background-image: url("./img/banner/5.png");
+		}
+
+		.cube_face_right .mobon_box .item2.obj5_img {
+			background-image: url("./img/banner/6.png");
+		}
+
+		.cube_face_right .mobon_box .item2.obj6_img {
+			background-image: url("./img/banner/7.png");
+		}
+
+		.cube_face_right .mobon_box .item2.obj7_img {
+			background-image: url("./img/banner/8.png");
+		}
+
+		.cube_face_right .mobon_box .item2.obj8_img {
+			background-image: url("./img/banner/9.png");
+		}
+
+		.cube_face_right .mobon_box .item2.obj9_img {
+			background-image: url("./img/banner/10.png");
+		}
+
+		.cube_face_back .mobon_box .obj10_img {
+			background-image: url("./img/banner/11.png");
+		}
+
+		.cube_face_back .mobon_box .obj11_img {
+			background-image: url("./img/banner/12.png");
+		}
+
+		.cube_face_left>.mobon_box .obj12_img {
+			background-image: url("./img/banner/13.png");
+		}
+
+		.cube_face_left .shop_box .mobon_box .obj13_img {
+			background-image: url("./img/banner/14.png");
+		}
+
+		.cube_face_left .shop_box .mobon_box .obj14_img {
+			background-image: url("./img/banner/15.png");
+		}
+
+		.cube_face_left .shop_box .mobon_box .obj15_img {
+			background-image: url("./img/banner/16.png");
+		}
+
+		.cube_face_left .shop_box .mobon_box .obj16_img {
+			background-image: url("./img/banner/17.png");
+		}
+
+		/* 반응형 */
+		@media screen and (max-width: 400px) {
+			#mobon_banner {
+				transform: scale(0.4);
+				top: -130px;
+			}
+		}
+		@media screen and (max-width: 290px) {
+			#mobon_banner {
+				transform: scale(0.27);
+				top: -180px;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<div id="mobon_banner">
+		<div class="scene">
+			<div class="cube">
+				<div class="cube_face cube_face_front obj0_img">
+					<div class="blur_effect obj0_img"></div>
+					<div class="shop_logo0 shop_logo"></div>
+					<div class="mobon_box">
+						<div class="item2 obj0_img"></div>
+					</div>
+				</div>
+
+				<div class="cube_face cube_face_right">
+					<div class="shop_logo0 shop_logo"></div>
+
+					<div class="shop_box type2">
+						<div class="mobon_box">
+							<div class="item2 obj1_img"></div>
+							<div class="goodsInfo">
+								<p class="obj1_pnm pnm">
+									울90% 셀린 옆트임 핸드메이드 코트(그레이)
+								</p>
+							</div>
+						</div>
+						<div class="mobon_box">
+							<div class="item2 obj2_img"></div>
+							<div class="goodsInfo">
+								<p class="obj2_pnm pnm">스피치 리얼토끼털 앵클부츠(6cm)</p>
+							</div>
+						</div>
+						<div class="mobon_box">
+							<div class="item2 obj3_img"></div>
+							<div class="goodsInfo">
+								<p class="obj3_pnm pnm">보송보송 기모 엘린다 후드</p>
+							</div>
+						</div>
+						<div class="mobon_box">
+							<div class="item2 obj4_img"></div>
+							<div class="goodsInfo">
+								<p class="obj4_pnm pnm">코지 스노우퍼 야상</p>
+							</div>
+						</div>
+						<div class="mobon_box">
+							<div class="item2 obj5_img"></div>
+							<div class="goodsInfo">
+								<p class="obj5_pnm pnm">
+									0303 하이 스트링 웰론 그레이 롱 패딩 CT
+								</p>
+							</div>
+						</div>
+						<div class="mobon_box">
+							<div class="item2 obj6_img"></div>
+							<div class="goodsInfo">
+								<p class="obj6_pnm pnm">액티 리얼라쿤 그레이 야상</p>
+							</div>
+						</div>
+						<div class="mobon_box">
+							<div class="item2 obj7_img"></div>
+							<div class="goodsInfo">
+								<p class="obj7_pnm pnm">치인트 기모팬츠(2color)</p>
+							</div>
+						</div>
+						<div class="mobon_box">
+							<div class="item2 obj8_img"></div>
+							<div class="goodsInfo">
+								<p class="obj8_pnm pnm">지퍼포인트 라쿤패딩</p>
+							</div>
+						</div>
+						<div class="mobon_box">
+							<div class="item2 obj9_img"></div>
+							<div class="goodsInfo">
+								<p class="obj9_pnm pnm">
+									울90% 셀린 옆트임 핸드메이드 코트(그레이)
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="cube_face cube_face_back">
+					<div class="shop_logo0 shop_logo"></div>
+					<div class="mobon_box">
+						<div class="item2 obj10_img"></div>
+					</div>
+					<div class="mobon_box">
+						<div class="item2 obj11_img"></div>
+					</div>
+				</div>
+
+				<div class="cube_face cube_face_left">
+					<div class="mobon_box">
+						<div class="item2 obj12_img"></div>
+					</div>
+					<div class="shop_box type3">
+						<div class="mobon_box">
+							<div class="item2 obj13_img"></div>
+						</div>
+						<div class="mobon_box">
+							<div class="item2 obj14_img"></div>
+						</div>
+						<div class="mobon_box">
+							<div class="item2 obj15_img"></div>
+						</div>
+						<div class="mobon_box">
+							<div class="item2 obj16_img"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+<script type="text/javascript">
+	var x = 0;
+	var y = -3;
+
+	var cube = document.querySelector(".cube");
+	var ctr_class = document.querySelectorAll(".c_ctr span");
+	var cube_face_back = document.querySelector(".cube_face_back");
+
+	function c_rotate(x, y) {
+		cube.style.animation = "unset";
+		cube.style.transform = "rotateX(" + x + "deg) rotateY(" + y + "deg)";
+	}
+</script>
+
+</html>

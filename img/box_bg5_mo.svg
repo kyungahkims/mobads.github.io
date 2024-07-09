@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="338" height="268" viewBox="0 0 338 268">
+    <defs>
+        <linearGradient id="2vub2d820a" x1=".034" x2=".831" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#0f2ab9"/>
+            <stop offset="1" stop-color="#3375f7"/>
+        </linearGradient>
+        <linearGradient id="m7cesvcjhc" x1=".331" y1=".125" x2=".831" xlink:href="#2vub2d820a"/>
+        <linearGradient id="jgpfmn73te" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#417cb8"/>
+            <stop offset="0" stop-color="#5499b8" stop-opacity=".78"/>
+            <stop offset="1" stop-color="#6ea12d" stop-opacity="0"/>
+        </linearGradient>
+        <clipPath id="z0wpbfd52d">
+            <rect data-name="사각형 6483" width="320" height="250" rx="10" transform="translate(-.499)" style="fill:url(#2vub2d820a)"/>
+        </clipPath>
+        <filter id="f6nbehavfb" x="0" y="0" width="338" height="268" filterUnits="userSpaceOnUse">
+            <feOffset dy="6"/>
+            <feGaussianBlur stdDeviation="3" result="blur"/>
+            <feFlood flood-opacity=".302"/>
+            <feComposite operator="in" in2="blur"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g style="opacity:.7">
+        <g style="filter:url(#f6nbehavfb)">
+            <rect data-name="사각형 6480" width="320" height="250" rx="10" transform="translate(9 3)" style="fill:url(#m7cesvcjhc)"/>
+        </g>
+        <g data-name="마스크 그룹 7166" transform="translate(9.499 3)" style="mix-blend-mode:hard-light;isolation:isolate;clip-path:url(#z0wpbfd52d)">
+            <g data-name="그룹 8334" transform="rotate(-180 189.054 76.333)">
+                <ellipse data-name="타원 762" cx="83.816" cy="83.365" rx="83.816" ry="83.365" transform="rotate(-180 128.359 83.364)" style="fill:url(#jgpfmn73te)"/>
+                <ellipse data-name="타원 763" cx="83.816" cy="83.365" rx="83.816" ry="83.365" style="fill:url(#jgpfmn73te)"/>
+            </g>
+        </g>
+    </g>
+</svg>

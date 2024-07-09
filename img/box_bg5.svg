@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="782" height="618" viewBox="0 0 782 618">
+    <defs>
+        <linearGradient id="i6v9z6lwpa" x1=".034" x2=".831" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#0f2ab9"/>
+            <stop offset="1" stop-color="#3375f7"/>
+        </linearGradient>
+        <linearGradient id="mpelhr3loc" x1=".218" y1=".116" x2=".831" xlink:href="#i6v9z6lwpa"/>
+        <linearGradient id="0llmg55c0e" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#417cb8"/>
+            <stop offset="0" stop-color="#5499b8" stop-opacity=".78"/>
+            <stop offset="1" stop-color="#6ea12d" stop-opacity="0"/>
+        </linearGradient>
+        <clipPath id="zevjrbhscd">
+            <rect data-name="사각형 6266" width="764" height="601" rx="14" transform="translate(644 4103)" style="fill:url(#i6v9z6lwpa)"/>
+        </clipPath>
+        <filter id="gs5s980s8b" x="0" y="0" width="782" height="618" filterUnits="userSpaceOnUse">
+            <feOffset dy="6"/>
+            <feGaussianBlur stdDeviation="3" result="blur"/>
+            <feFlood flood-opacity=".302"/>
+            <feComposite operator="in" in2="blur"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g style="opacity:.7">
+        <g style="filter:url(#gs5s980s8b)">
+            <rect data-name="사각형 6265" width="764" height="600" rx="14" transform="translate(9 3)" style="fill:url(#mpelhr3loc)"/>
+        </g>
+        <g data-name="마스크 그룹 7156" transform="translate(-635 -4100)" style="mix-blend-mode:hard-light;isolation:isolate;clip-path:url(#zevjrbhscd)">
+            <g data-name="그룹 7953" transform="rotate(-180 778.749 2238.88)">
+                <circle data-name="타원 757" cx="200.668" cy="200.668" r="200.668" transform="rotate(-180 311.558 204.306)" style="fill:url(#0llmg55c0e)"/>
+                <circle data-name="타원 758" cx="200.668" cy="200.668" r="200.668" transform="translate(8.498 7.277)" style="fill:url(#0llmg55c0e)"/>
+            </g>
+        </g>
+    </g>
+</svg>

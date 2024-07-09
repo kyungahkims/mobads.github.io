@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="270" height="290" viewBox="0 0 270 290">
+    <defs>
+        <linearGradient id="f0lmmic2ta" x1=".034" x2=".831" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#0f2ab9"/>
+            <stop offset="1" stop-color="#3375f7"/>
+        </linearGradient>
+        <linearGradient id="1oe3s3qv0d" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#00c14d"/>
+            <stop offset="0" stop-color="#61e9e9" stop-opacity=".78"/>
+            <stop offset="1" stop-color="#8fbde6" stop-opacity="0"/>
+        </linearGradient>
+        <linearGradient id="e5fies1cpe" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#0054c1"/>
+            <stop offset="0" stop-color="#1f5baa" stop-opacity=".78"/>
+            <stop offset="1" stop-color="#8fbde6" stop-opacity="0"/>
+        </linearGradient>
+        <clipPath id="moixbf319c">
+            <rect data-name="사각형 6223" width="252" height="272" rx="10" style="fill:url(#f0lmmic2ta)"/>
+        </clipPath>
+        <filter id="6q52782llb" x="0" y="0" width="270" height="290" filterUnits="userSpaceOnUse">
+            <feOffset dy="6"/>
+            <feGaussianBlur stdDeviation="3" result="blur"/>
+            <feFlood flood-opacity=".302"/>
+            <feComposite operator="in" in2="blur"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g style="opacity:.7">
+        <g style="filter:url(#6q52782llb)">
+            <rect data-name="사각형 6238" width="252" height="272" rx="10" transform="translate(9 3)" style="fill:url(#f0lmmic2ta)"/>
+        </g>
+        <g data-name="마스크 그룹 7154" transform="translate(9 3)" style="opacity:.5;mix-blend-mode:hard-light;isolation:isolate;clip-path:url(#moixbf319c)">
+            <g data-name="그룹 7943" transform="matrix(0 -1 1 0 0 375.428)">
+                <circle data-name="타원 752" cx="96" cy="96" r="96" transform="rotate(-180 147.214 96)" style="fill:url(#1oe3s3qv0d)"/>
+                <circle data-name="타원 753" cx="96.286" cy="96.286" r="96.286" style="fill:url(#e5fies1cpe)"/>
+            </g>
+        </g>
+    </g>
+</svg>

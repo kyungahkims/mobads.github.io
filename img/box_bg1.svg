@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="482" height="518" viewBox="0 0 482 518">
+    <defs>
+        <linearGradient id="m7cxhdvgda" x1=".034" x2=".831" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#0f2ab9"/>
+            <stop offset="1" stop-color="#3375f7"/>
+        </linearGradient>
+        <linearGradient id="4420tgjohd" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#417cb8"/>
+            <stop offset="0" stop-color="#5499b8" stop-opacity=".78"/>
+            <stop offset="1" stop-color="#6ea12d" stop-opacity="0"/>
+        </linearGradient>
+        <clipPath id="021vp7lzqc">
+            <rect data-name="사각형 5974" width="464" height="500" rx="14" transform="translate(644 4103)" style="fill:url(#m7cxhdvgda)"/>
+        </clipPath>
+        <filter id="43kwoa0tdb" x="0" y="0" width="482" height="518" filterUnits="userSpaceOnUse">
+            <feOffset dy="6"/>
+            <feGaussianBlur stdDeviation="3" result="blur"/>
+            <feFlood flood-opacity=".302"/>
+            <feComposite operator="in" in2="blur"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g data-name="그룹 8288" style="opacity:.7">
+        <g style="filter:url(#43kwoa0tdb)">
+            <rect data-name="사각형 6236" width="464" height="500" rx="14" transform="translate(9 3)" style="fill:url(#m7cxhdvgda)"/>
+        </g>
+        <g data-name="마스크 그룹 4199" transform="translate(-635 -4100)" style="mix-blend-mode:hard-light;isolation:isolate;clip-path:url(#021vp7lzqc)">
+            <g data-name="그룹 7127" transform="rotate(-90 2698.557 1904.066)">
+                <circle data-name="타원 729" cx="176.996" cy="176.996" r="176.996" transform="rotate(-180 275.307 180.634)" style="fill:url(#4420tgjohd)"/>
+                <circle data-name="타원 748" cx="176.996" cy="176.996" r="176.996" transform="translate(8.498 7.277)" style="fill:url(#4420tgjohd)"/>
+            </g>
+        </g>
+    </g>
+</svg>

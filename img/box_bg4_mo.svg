@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="318" height="268" viewBox="0 0 318 268">
+    <defs>
+        <linearGradient id="zb2hght75a" x1=".034" x2=".831" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#0f2ab9"/>
+            <stop offset="1" stop-color="#3375f7"/>
+        </linearGradient>
+        <linearGradient id="c0x2076qnc" x1=".331" y1=".125" x2=".831" xlink:href="#zb2hght75a"/>
+        <linearGradient id="sgbhffrrme" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#417cb8"/>
+            <stop offset="0" stop-color="#5499b8" stop-opacity=".78"/>
+            <stop offset="1" stop-color="#6ea12d" stop-opacity="0"/>
+        </linearGradient>
+        <clipPath id="d1ibytgu7d">
+            <rect data-name="사각형 6481" width="300" height="250" rx="10" style="fill:url(#zb2hght75a)"/>
+        </clipPath>
+        <filter id="c00yofovtb" x="0" y="0" width="318" height="268" filterUnits="userSpaceOnUse">
+            <feOffset dy="6"/>
+            <feGaussianBlur stdDeviation="3" result="blur"/>
+            <feFlood flood-opacity=".302"/>
+            <feComposite operator="in" in2="blur"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g style="opacity:.7">
+        <g style="filter:url(#c00yofovtb)">
+            <rect data-name="사각형 6480" width="300" height="250" rx="10" transform="translate(9 3)" style="fill:url(#c0x2076qnc)"/>
+        </g>
+        <g data-name="마스크 그룹 7165" transform="translate(9 3)" style="mix-blend-mode:hard-light;isolation:isolate;clip-path:url(#d1ibytgu7d)">
+            <g data-name="그룹 8328" transform="matrix(0 -1 1 0 0 344.647)">
+                <circle data-name="타원 760" cx="101.333" cy="101.333" r="101.333" transform="rotate(-180 155.184 101.332)" style="fill:url(#sgbhffrrme)"/>
+                <circle data-name="타원 761" cx="101.333" cy="101.333" r="101.333" style="fill:url(#sgbhffrrme)"/>
+            </g>
+        </g>
+    </g>
+</svg>

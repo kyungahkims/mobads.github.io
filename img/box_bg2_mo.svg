@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="270" height="290" viewBox="0 0 270 290">
+    <defs>
+        <linearGradient id="0k1i519xta" x1=".034" x2=".831" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#0f2ab9"/>
+            <stop offset="1" stop-color="#3375f7"/>
+        </linearGradient>
+        <linearGradient id="hu2q6148ud" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#169b3e"/>
+            <stop offset="0" stop-color="#a9e260" stop-opacity=".78"/>
+            <stop offset="1" stop-color="#aae361" stop-opacity="0"/>
+        </linearGradient>
+        <linearGradient id="lioewtd84e" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#169b3e"/>
+            <stop offset="0" stop-color="#008750" stop-opacity=".78"/>
+            <stop offset="1" stop-color="#aae361" stop-opacity="0"/>
+        </linearGradient>
+        <clipPath id="bgshv3ucic">
+            <rect data-name="사각형 6221" width="252" height="272" rx="10" style="fill:url(#0k1i519xta)"/>
+        </clipPath>
+        <filter id="1wt8b1ju7b" x="0" y="0" width="270" height="290" filterUnits="userSpaceOnUse">
+            <feOffset dy="6"/>
+            <feGaussianBlur stdDeviation="3" result="blur"/>
+            <feFlood flood-opacity=".302"/>
+            <feComposite operator="in" in2="blur"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g style="opacity:.7">
+        <g style="filter:url(#1wt8b1ju7b)">
+            <rect data-name="사각형 6237" width="252" height="272" rx="10" transform="translate(9 3)" style="fill:url(#0k1i519xta)"/>
+        </g>
+        <g data-name="마스크 그룹 7153" transform="translate(9 3)" style="opacity:.5;mix-blend-mode:hard-light;isolation:isolate;clip-path:url(#bgshv3ucic)">
+            <g data-name="그룹 7942" transform="rotate(-90 106.344 131.453)">
+                <ellipse data-name="타원 750" cx="96.286" cy="96.127" rx="96.286" ry="96.127" transform="rotate(-180 147.455 96.127)" style="fill:url(#hu2q6148ud)"/>
+                <ellipse data-name="타원 751" cx="96.286" cy="96.127" rx="96.286" ry="96.127" style="fill:url(#lioewtd84e)"/>
+            </g>
+        </g>
+    </g>
+</svg>

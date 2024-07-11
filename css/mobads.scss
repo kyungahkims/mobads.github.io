@@ -178,6 +178,20 @@ body {
 	}
 }
 
+/* .page3.now {
+	.box {
+		animation: zoomInDown;
+		animation-duration: 1.5s;
+
+		&:hover {
+			.box_cont {
+				animation: zoomIn;
+				animation-duration: 0.3s;
+			}
+		}
+	}
+} */
+
 .page4.now {
 	.swiper-slide-active {
 
@@ -211,21 +225,16 @@ body {
 	}
 }
 
-/* html, body */
-html,
-body {
-	position: fixed;
-	top: 0;
-	bottom: 0;
-	width: 100%;
-	height: 100%;
+/********************/
+
+/* body */
+ body {
+  height: calc(var(--vh, 1vh) * 100);
+  overflow: hidden;
 }
 
-/********** wrap **********/
 .wrap {
 	width: 100%;
-	height: calc(var(--vh, 1vh) * 100);
-	overflow: hidden;
 	background-color: #141a24;
 }
 
@@ -544,6 +553,12 @@ header {
 		height: calc(var(--vh, 1vh) * 100);
 		text-align: center;
 		margin: 0 auto;
+		//
+		box-sizing: border-box;
+		-ms-overflow-style: none;
+		scrollbar-width: none;
+		overflow: hidden;
+		//
 		overflow-y: auto;
 		padding: 0 20px;
 
@@ -1356,7 +1371,6 @@ header {
 /* footer */
 footer {
 	height: auto !important;
-	min-height: 150px;
 	text-align: center;
 	padding: 36px 0 !important;
 	background-color: #1b2027;
@@ -2132,7 +2146,7 @@ footer {
 
 	/* footer */
 	footer {
-		min-height: 210px;
+		height: auto !important;
 		padding: 30px 0 !important;
 
 		.logo {
@@ -2178,7 +2192,6 @@ footer {
 
 			.bt_close {
 				z-index: 2;
-
 				img {
 					width: 40px;
 				}
